@@ -1053,7 +1053,7 @@ void draw_roc_flag(gdImagePtr img) {
 }
 </pre>
 <p><img alt="" height="267" src="/images/roc_flag_in_gd.png" width="400"/></p>
-<h1>C_EX </h1>
+<h1>C_EX</h1>
 <p>1.</p>
 <p>#include &lt;stdio.h&gt;<br/>void main()<br/>{<br/>int a;<br/>a = 3;<br/>printf("%d\n", !a );<br/>a = 0;<br/>printf("%d\n", !a );<br/>}</p>
 <p><img alt="" height="66" src="/images/螢幕擷取畫面 2023-12-26 210725.png" width="308"/></p>
@@ -1192,6 +1192,98 @@ void draw_roc_flag(gdImagePtr img) {
 <p>// 印出員工ID和薪資<br/>printf("\n員工ID = %s\n薪資 = U$ %.2lf\n", id, salary);</p>
 <p>return 0;<br/>}</p>
 <p><img alt="" height="201" src="/images/螢幕擷取畫面 2023-12-26 222715.png" width="397"/></p>
+<h1>期末總結</h1>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">A: 是否按照進度明確標示倉儲的改版歷程:有的，我有跟著影片一步一步做。</pre>
+<p><video controls="controls" height="641" width="1000">
+<source src="/images/A倉儲.mp4" type="video/mp4"/></video><br/><br/></p>
+<p></p>
+<p></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">B: 是否根據 IPv4 與 IPv6 網路環境設定進行作法討論：有的，我有跟著老師的影片做，也了解如何設定網路。</pre>
+<p><video controls="controls" height="641" width="1000">
+<source src="/images/IPV4跟6網路設定.mp4" type="video/mp4"/></video><br/><br/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">C: 是否就 Replit、s.cycu.org 與 localhost 情境下對個人與分組倉儲進行設定操作。我有跟著老師給的網站做，也有做分組的Replit</pre>
+<p><video controls="controls" height="641" width="1000">
+<source src="/images/C個人跟團隊倉儲.mp4" type="video/mp4"/></video><br/><br/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">E: 是否完成 w2-w5 週任務中的 Exercises:有完成，並且有看影片。</pre>
+<p><video controls="controls" height="641" width="1000">
+<source src="/images/E%20w2-5.mp4" type="video/mp4"/></video><br/><br/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">F: 是否完成 w6-w7 週任務中的練習一與練習二</pre>
+<p><video controls="controls" height="641" width="1000">
+<source src="/images/F.W6-7.mp4" type="video/mp4"/></video><br/><br/></p>
+<p><span></span></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">G: 是否完成 C 結合 gd 繪圖程式庫, 畫出 PROC(規格), United Kingdom(規格), Japan(規格)與 South Korea(規格) Flags</pre>
+<p><video controls="controls" height="641" width="1000">
+<source src="/images/G.畫國旗.mp4" type="video/mp4"/></video><br/><br/></p>
+<h1>W16</h1>
+<p><img alt="" height="200" src="/images/mass_spring_damper_system.png" width="400"/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
+
+// System parameters
+#define M1 2.0
+#define M2 3.0
+#define K1 0.5
+#define K2 1.0
+#define K3 15.0
+#define C1 0.25
+#define C2 0.33
+#define C3 0.5
+
+// Function to calculate the derivative of the state
+void calculate_derivative(double t, double state[4], double derivative[4]) {
+    derivative[0] = state[2];  // dx1/dt = v1
+    derivative[1] = state[3];  // dx2/dt = v2
+
+    double delta_x = state[0] - state[1];
+
+    // dv1/dt
+    derivative[2] = -(K1 * state[0] + K2 * delta_x) / M1;
+
+    // dv2/dt
+    derivative[3] = -(K3 * state[1] - K2 * delta_x) / M2;
+}
+
+// Euler's Method for solving the system
+void euler_method(double t_initial, double t_final, double dt, double initial_conditions[4]) {
+    FILE *output_file;
+    output_file = fopen("trajectory_data.txt", "w");
+
+    double t = t_initial;
+    double state[4];
+    for (int i = 0; i &lt; 4; ++i) {
+        state[i] = initial_conditions[i];
+    }
+
+    while (t &lt;= t_final) {
+        fprintf(output_file, "%f %f %f %f %f\n", t, state[0], state[1], state[2], state[3]);
+
+        double derivative[4];
+        calculate_derivative(t, state, derivative);
+
+        for (int i = 0; i &lt; 4; ++i) {
+            state[i] += derivative[i] * dt;
+        }
+
+        t += dt;
+    }
+
+    fclose(output_file);
+}
+
+int main() {
+    // Define the initial conditions
+    double initial_conditions[4] = {1.0, -0.5, 0.0, 0.0};  // x1, x2, v1, v2
+
+    // Time parameters
+    double t_initial = 0.0;
+    double t_final = 10.0;
+    double dt = 0.01;
+
+    // Solve the system using Euler's Method
+    euler_method(t_initial, t_final, dt, initial_conditions);
+
+    return 0;
+}</pre>
+<p><img alt="" height="281" src="/images/mass-spring_damper_syste...2.c.png" width="400"/><br/><br/></p>
 <p></p>
 <p></p>
 <p></p>
