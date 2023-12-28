@@ -1,0 +1,287 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41223223 cp2023</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41223223 cp2023</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='w5.html'>w5</a><li><a href='w6.html'>w6</a><li><a href='w7.html'>w7</a><li><a href='w11.html'>w11</a><li><a href='w13.html'>w13</a><li><a href='W15.html'>W15</a><li><a href='C_EX.html'>C_EX</a><li><a href='ansic.html'>ansic</a><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">C_EX << <a href='C_EX.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>ansic</h1>
+<p>1.</p>
+<p>int main() {<br/> int x; // Declare variable x</p>
+<p>// Print header for the table<br/> printf("x+1\tx+3\tx+5\tx+7\n\n");<br/> printf("---------------------------\n");</p>
+<p>// Loop to generate and print table values<br/> for (x = 1; x &lt;= 15; x += 3)<br/> printf("%d\t%d\t%d\t%d\n", x, (x + 2), (x + 4), (x + 6));</p>
+<p>return 0; // Indicate successful program execution<br/>}</p>
+<p><img alt="" height="187" src="./../images/螢幕擷取畫面 2023-12-26 215711.png" width="336"/></p>
+<p>2.</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main() {<br/> int a, b;</p>
+<p>// Prompt user for input<br/> printf("Input two pairs values (integer values):\n");</p>
+<p>// Read two integer values from user and store them in 'a' and 'b'<br/> if (scanf("%d %d", &amp;a, &amp;b) != 2) {<br/> fprintf(stderr, "Error: Invalid input. Please enter two integer values.\n");<br/> return 1; // Return an error code for invalid input<br/> }</p>
+<p>// Check if 'a' is not equal to 'b'<br/> if (a != b) {<br/> // Check if 'b' is greater than 'a'<br/> if (b &gt; a) {<br/> printf("Ascending order\n"); // Print message for ascending order<br/> } else {<br/> printf("Descending order\n"); // Print message for descending order<br/> }<br/> }</p>
+<p>return 0; // End of program<br/>}</p>
+<p><img alt="" height="138" src="./../images/螢幕擷取畫面 2023-12-26 220153.png" width="441"/></p>
+<p>3.</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main() {<br/> int j, numbers[5], total = 0; // 宣告數組用於存儲 5 個數字和變數用於總和</p>
+<p>// 提示用戶輸入五個數字並存入數組<br/> for (j = 0; j &lt; 5; j++) {<br/> printf("\nInput the %s number: ", j == 0 ? "first" : (j == 1 ? "second" : (j == 2 ? "third" : (j == 3 ? "fourth" : "fifth"))));<br/> if (scanf("%d", &amp;numbers[j]) != 1) {<br/> fprintf(stderr, "Error: Invalid input for the %s number.\n", j == 0 ? "first" : (j == 1 ? "second" : (j == 2 ? "third" : (j == 3 ? "fourth" : "fifth"))));<br/> return 1;<br/> }<br/> }</p>
+<p>for (j = 0; j &lt; 5; j++) {<br/> if ((numbers[j] % 2) != 0) // 檢查數字是否為奇數<br/> {<br/> total += numbers[j]; // 將奇數添加到總和中<br/> }<br/> }</p>
+<p>printf("\nSum of all odd values: %d", total); // 輸出所有奇數的總和<br/> return 0;<br/>}</p>
+<p><img alt="" height="291" src="./../images/螢幕擷取畫面 2023-12-26 220419.png" width="484"/></p>
+<p>4.</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main() {<br/>int x, y;<br/>int result_x, result_y; // 用於儲存 scanf 的返回值</p>
+<p>// 獲取第一個整數<br/>printf("輸入第一個整數：");<br/>result_x = scanf("%d", &amp;x);<br/>if (result_x != 1) {<br/>printf("錯誤：請輸入整數。\n");<br/>return 1;<br/>}</p>
+<p>// 獲取第二個整數<br/>printf("輸入第二個整數：");<br/>result_y = scanf("%d", &amp;y);<br/>if (result_y != 1) {<br/>printf("錯誤：請輸入整數。\n");<br/>return 1;<br/>}</p>
+<p>// 計算並輸出它們的乘積<br/>printf("這兩個整數的乘積 = %d\n", x * y);</p>
+<p>return 0;<br/>}</p>
+<p><img alt="" height="108" src="./../images/螢幕擷取畫面 2023-12-26 220624.png" width="655"/></p>
+<p>5.</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main()<br/>{<br/>int a = 125, b = 12345; /* 宣告並初始化整數變數 */<br/>long ax = 1234567890; /* 宣告並初始化長整數變數 */<br/>short s = 4043; /* 宣告並初始化短整數變數 */<br/>float x = 2.13459; /* 宣告並初始化浮點數變數 */<br/>double dx = 1.1415927; /* 宣告並初始化雙精度浮點數變數 */<br/>char c = 'W'; /* 宣告並初始化字符變數 */<br/>unsigned long ux = 2541567890; /* 宣告並初始化無符號長整數變數 */</p>
+<p>/* 各種算術運算和類型轉換 */<br/>printf("a + c = %d\n", a + c);<br/>printf("x + c = %f\n", x + c);<br/>printf("dx + x = %f\n", dx + x);<br/>printf("((int) dx) + ax = %ld\n", ((int) dx) + ax);<br/>printf("a + x = %f\n", a + x);<br/>printf("s + b = %d\n", s + b);<br/>printf("ax + b = %ld\n", ax + b);<br/>printf("s + c = %hd\n", s + c);<br/>printf("ax + c = %ld\n", ax + c);<br/>printf("ax + ux = %lu\n", ax + ux);</p>
+<p>return 0;<br/>}</p>
+<p><img alt="" height="246" src="./../images/螢幕擷取畫面 2023-12-26 220749.png" width="348"/></p>
+<p>6.</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main(void) {<br/> unsigned char char1, char2, char3, char4, char5, char6, char7, char8;</p>
+<p>// Print table header<br/> printf("|---------------------------------------------------------------------------------------------------------|\n");<br/> printf("|extended ASCII table - excluding control characters |\n");<br/> printf("| Ch Dec Hex | Ch Dec Hex | Ch Dec Hex | Ch Dec Hex | Ch Dec Hex | Ch Dec Hex | Ch Dec Hex |\n");<br/> printf("|----------------|----------------|-------------|--------------|--------------|-------------|-------------|\n");</p>
+<p>// Loop through characters<br/> for (int i = 0; i &lt; 32; i++) {<br/> // Calculate characters for different ranges<br/> char1 = i;<br/> char2 = i + 32;<br/> char3 = i + 64;<br/> char4 = i + 96;<br/> char5 = i + 128; // extended ASCII characters<br/> char6 = i + 160;<br/> char7 = i + 192;<br/> char8 = i + 224;</p>
+<p>// Print characters and their decimal and hexadecimal representations<br/> printf("| %c %3d %#x ", char2, char2, char2);<br/> printf("| %c %3d %#x ", char3, char3, char3);</p>
+<p>// Special case for DEL character<br/> if (char4 == 127) {<br/> printf("|%s %3d %#x |", "DEL", char4, char4);<br/> } else {<br/> printf("| %c %3d %#x |", char4, char4, char4);<br/> }</p>
+<p>// Print extended ASCII characters for the current system.<br/> printf(" %c %3d %#x | %c %3d %#x | %c %3d %#x | %c %3d %#x |\n",<br/> char5, char5, char5,<br/> char6, char6, char6,<br/> char7, char7, char7,<br/> char8, char8, char8);<br/> }</p>
+<p>return 0; // Indicate successful execution of the program<br/>}</p>
+<p><img alt="" height="237" src="./../images/螢幕擷取畫面 2023-12-26 221206.png" width="400"/></p>
+<p>7.</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main() {<br/> int x; // 用於存儲總里程的變數，以公里為單位<br/> float y; // 用於存儲總耗油量的變數，以升為單位</p>
+<p>// 提示用戶輸入總里程並存入 'x'<br/> printf("Input total distance in km: ");<br/> // 檢查 scanf 的返回值，確保成功讀取一個整數<br/> if (scanf("%d", &amp;x) != 1) {<br/> fprintf(stderr, "Error: Invalid input for total distance.\n");<br/> return 1;<br/> }</p>
+<p>// 提示用戶輸入總耗油量並存入 'y'<br/> printf("Input total fuel spent in liters: ");<br/> // 檢查 scanf 的返回值，確保成功讀取一個浮點數<br/> if (scanf("%f", &amp;y) != 1) {<br/> fprintf(stderr, "Error: Invalid input for total fuel spent.\n");<br/> return 1;<br/> }</p>
+<p>// 計算並打印平均油耗<br/> printf("Average consumption (km/lt) %.3f ", x / y);<br/> printf("\n");</p>
+<p>return 0;<br/>}</p>
+<p><img alt="" height="101" src="./../images/螢幕擷取畫面 2023-12-26 222054.png" width="386"/></p>
+<p>8.</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main() {<br/> // 声明变量<br/> float principal_amt, rate_of_interest, days, interest;<br/> const int yearInDays = 365; // 用于转换利率的常量</p>
+<p>// 提示用户输入贷款金额<br/> printf("输入贷款金额 (输入 0 退出): ");<br/> if (scanf("%f", &amp;principal_amt) != 1) {<br/> fprintf(stderr, "Error: Invalid input for loan amount.\n");<br/> return 1;<br/> }</p>
+<p>// 主循环用于处理贷款<br/> while ((int)principal_amt != 0) <br/> {<br/> // 提示用户输入利率<br/> printf("输入利率: ");<br/> if (scanf("%f", &amp;rate_of_interest) != 1) {<br/> fprintf(stderr, "Error: Invalid input for interest rate.\n");<br/> return 1;<br/> }</p>
+<p>// 提示用户输入贷款期限（天）<br/> printf("输入贷款期限（天）: ");<br/> if (scanf("%f", &amp;days) != 1) {<br/> fprintf(stderr, "Error: Invalid input for loan term.\n");<br/> return 1;<br/> }</p>
+<p>// 计算利息<br/> interest = (principal_amt * rate_of_interest * days) / yearInDays;</p>
+<p>// 显示利息金额<br/> printf("利息金额为 $%.2f\n", interest);</p>
+<p>// 提示用户输入下一个贷款金额<br/> printf("\n\n输入贷款金额 (输入 0 退出): ");<br/> if (scanf("%f", &amp;principal_amt) != 1) {<br/> fprintf(stderr, "Error: Invalid input for loan amount.\n");<br/> return 1;<br/> }<br/> }</p>
+<p>return 0;<br/>}</p>
+<p><img alt="" height="185" src="./../images/螢幕擷取畫面 2023-12-26 221728.png" width="413"/></p>
+<p>9.</p>
+<p>#include &lt;stdio.h&gt;<br/>#include &lt;stdlib.h&gt;<br/>#include &lt;limits.h&gt;</p>
+<p>int divide_two(int dividend_num, int divisor_num) {<br/> int sign = (float)dividend_num / divisor_num &gt; 0 ? 1 : -1;<br/> unsigned int dvd = dividend_num &gt; 0 ? dividend_num : -dividend_num;<br/> unsigned int dvs = divisor_num &gt; 0 ? divisor_num : -divisor_num;<br/> unsigned int bit_num[33];<br/> unsigned int i = 0;<br/> long long d = dvs;</p>
+<p>bit_num[i] = d;<br/> while (d &lt;= dvd) {<br/> bit_num[++i] = d = d &lt;&lt; 1;<br/> }<br/> i--;</p>
+<p>unsigned int result = 0;<br/> while (dvd &gt;= dvs) {<br/> if (dvd &gt;= bit_num[i]) {<br/> dvd -= bit_num[i];<br/> result += (1 &lt;&lt; i);<br/> } else {<br/> i--;<br/> }<br/> }</p>
+<p>if (result &gt; INT_MAX &amp;&amp; sign &gt; 0) {<br/> return INT_MAX;<br/> }<br/> return (int)result * sign;<br/>}</p>
+<p>int main(void) {<br/> int dividend_num = 15;<br/> int divisor_num = 3;<br/> printf("Quotient after dividing %d and %d: %d", dividend_num, divisor_num, divide_two(dividend_num, divisor_num));<br/> return 0;<br/>}</p>
+<p><img alt="" height="68" src="./../images/螢幕擷取畫面 2023-12-26 222337.png" width="550"/></p>
+<p>10.</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main() {<br/>char id[10]; // 用於存儲員工ID的變數（最多10個字符）<br/>int hour; // 用於存儲工作時數的變數<br/>double value, salary; // 用於每小時薪資和總薪資的變數</p>
+<p>// 提示使用者輸入員工ID<br/>printf("輸入員工ID（最多10個字符）：");</p>
+<p>// 檢查scanf的返回值<br/>if (scanf("%9s", id) != 1) {<br/>fprintf(stderr, "錯誤：無法讀取員工ID。\n");<br/>return 1; // 返回錯誤碼<br/>}</p>
+<p>// 提示使用者輸入工作時數<br/>printf("\n輸入工作時數：");</p>
+<p>// 檢查scanf的返回值<br/>if (scanf("%d", &amp;hour) != 1) {<br/>fprintf(stderr, "錯誤：無法讀取工作時數。\n");<br/>return 1; // 返回錯誤碼<br/>}</p>
+<p>// 提示使用者輸入每小時薪資<br/>printf("\n每小時薪資：");</p>
+<p>// 檢查scanf的返回值<br/>if (scanf("%lf", &amp;value) != 1) {<br/>fprintf(stderr, "錯誤：無法讀取每小時薪資。\n");<br/>return 1; // 返回錯誤碼<br/>}</p>
+<p>// 計算總薪資<br/>salary = value * hour;</p>
+<p>// 印出員工ID和薪資<br/>printf("\n員工ID = %s\n薪資 = U$ %.2lf\n", id, salary);</p>
+<p>return 0;<br/>}</p>
+<p><img alt="" height="201" src="./../images/螢幕擷取畫面 2023-12-26 222715.png" width="397"/></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<br />C_EX << <a href='C_EX.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
