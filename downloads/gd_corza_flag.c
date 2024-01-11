@@ -32,7 +32,8 @@ int main() {
   int circleRadius = 75;     
 
   // 繪製圓形
-  gdImageFilledEllipse(im, circleX, circleY, circleRadius * 2, circleRadius * 2, red);
+  gdImageFilledEllipse(im, circleX, circleY, circleRadi
+    us * 2, circleRadius * 2, red);
 
   int circleX2 = 515;    // 圓心的 X 座標
 
